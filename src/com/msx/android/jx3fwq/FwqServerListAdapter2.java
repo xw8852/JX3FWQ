@@ -5,6 +5,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import com.msx.android.jx3fwq.bean.FWQBean;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;

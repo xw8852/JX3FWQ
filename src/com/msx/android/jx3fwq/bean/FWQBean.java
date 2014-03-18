@@ -1,4 +1,4 @@
-package com.msx.android.jx3fwq;
+package com.msx.android.jx3fwq.bean;
 
 public class FWQBean {
 	public String server;

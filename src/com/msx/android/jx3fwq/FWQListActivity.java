@@ -17,6 +17,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.msx.android.jx3fwq.bean.FWQBean;
 import com.msx7.annotations.Inject;
 import com.msx7.annotations.InjectActivity;
 import com.msx7.annotations.InjectView;

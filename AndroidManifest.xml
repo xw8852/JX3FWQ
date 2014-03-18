@@ -25,7 +25,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" android:name="FWQApplication">
         <activity
-            android:name="com.msx.android.jx3fwq.FWQListActivity"
+            android:name="com.msx.android.jx3fwq.FWQListActivity2"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             >

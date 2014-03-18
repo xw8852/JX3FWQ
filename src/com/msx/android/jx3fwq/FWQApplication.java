@@ -1,5 +1,6 @@
 package com.msx.android.jx3fwq;
 
+import com.msx.android.jx3fwq.CMD.ServerListCommand;
 import com.msx7.core.Controller;
 import com.msx7.core.Manager;
 

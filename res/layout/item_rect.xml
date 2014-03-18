@@ -1,14 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
 
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/server"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/OtherSever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#aa000000"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/status_bg"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/RoleNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rolenum_bg"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:visibility="gone" />
+    </LinearLayout>
+
     <RelativeLayout
+        android:id="@+id/rect"
         android:layout_width="wrap_content"
-        android:padding="5dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/back_mesh"
-        android:layout_height="100dp" >
+        android:minHeight="100dp"
+        android:padding="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone" >
 
         <View
             android:id="@+id/rect_left"
@@ -28,13 +82,14 @@
         <TextView
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_alignBottom="@+id/rect_left"
             android:layout_alignLeft="@+id/rect_left"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/rect_left"
             android:layout_alignTop="@+id/rect_left"
+            android:layout_centerVertical="true"
             android:gravity="center"
             android:padding="5dp"
             android:text="忆盈楼"
@@ -44,26 +99,65 @@
             android:id="@+id/textView3"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginLeft="85dp"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="85dp"
             android:background="@drawable/bg_star"
             android:gravity="center"
             android:text="火"
-            android:textColor="#ff0066"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff0066" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:layout_alignBottom="@+id/rect_right"
             android:layout_alignLeft="@+id/rect_right"
             android:layout_alignRight="@+id/rect_right"
             android:layout_alignTop="@+id/rect_right"
+            android:layout_centerVertical="true"
             android:gravity="center"
             android:padding="5dp"
             android:text="金蛇漫舞  落雁峰 \n青萝山  无极道场\n三星望月 飞星遁影"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/circle_bg" />
+
+        <ImageView
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/circle_prev" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/prev"
+            android:layout_alignLeft="@+id/prev"
+            android:layout_alignRight="@+id/prev"
+            android:layout_alignTop="@+id/prev"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="忆青春"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24sp" />
     </RelativeLayout>
 
 </LinearLayout>
